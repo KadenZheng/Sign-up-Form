@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="left">
+            <div class="logo-background">
+                <img src="Odin lined.png" alt="logo" id="logo" />
+                <h1 class="logo">ODIN</h1>
+            </div>
+        </div>
+        <div class="right">
+            <div class="r-top">
+                <div class="text">
+                    <h3>
+                        This is not a real online service! you know you need something like this in your life to help you realize your
+                        deepest dreams. Sign up now to get started.
+                    </h3>
+                    <h3>You know you want to.</h3>
+                </div>
+            </div>
+            <div class="r-mid">
+                <h2 style="padding-left: 25px; padding-top: 20px; padding-bottom: 10px">Let's do this!</h2>
+                <form action="https://httpbin.org/post" method="post" id="form">
+                    <div class="form-left">
+                        <div class="field">
+                            <label for="FIRST_NAME"><h6>FIRST NAME</h6></label>
+                            <input type="text" id="FIRST_NAME" name="FIRST NAME" required />
+                        </div>
+                        <div class="field">
+                            <label for="EMAIL"><h6>EMAIL</h6></label>
+                            <input type="email" id="EMAIL" name="email" required />
+                        </div>
+                        <div class="field">
+                            <label for="PASSWORD"><h6>PASSWORD</h6></label>
+                            <input
+                                type="password"
+                                id="PASSWORD"
+                                name="password"
+                                pattern=".{8,}"
+                                title="Password must be at least 8 characters long"
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="form-right">
+                        <div class="field">
+                            <label for="LAST_NAME"><h6>LAST NAME</h6></label>
+                            <input type="text" id="LAST_NAME" name="LAST NAME" required />
+                        </div>
+                        <div class="field">
+                            <label for="PHONE_NUMBER"><h6>PHONE NUMBER</h6></label>
+                            <input type="tel" id="PHONE_NUMBER" name="PHONE NUMBER" pattern="[0-9]{10}" required />
+                        </div>
+                        <div class="field">
+                            <label for="CONFIRM_PASSWORD"><h6>CONFIRM PASSWORD</h6></label>
+                            <input
+                                type="password"
+                                id="CONFIRM_PASSWORD"
+                                name="confirm_password"
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                title="Password must match and be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, and one number"
+                                required
+                            />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="r-bot">
+                <div class="submit-container">
+                    <button type="submit" form="form">
+                        <h5>Create Account</h5>
+                    </button>
+                    <h5>Already have an account? <a href="">Log in</a></h5>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
